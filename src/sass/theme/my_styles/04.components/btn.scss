@@ -1,0 +1,26 @@
+
+/* btn */
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.btn--lite {
+  color: #414649;
+  background: #fff;
+}
+
+.btn--dark {
+  color: #fff;
+  background: #414649;
+}
+
+.btn:hover {
+  background-color: #93e9be;
+  color: #414649;
+}

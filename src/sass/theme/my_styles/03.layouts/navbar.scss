@@ -1,0 +1,39 @@
+/* navbar */
+.navbar__wrapper {
+  background: #414649;
+}
+
+
+.navbar {
+  width: 95%;
+  color: #fff;
+  overflow: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+// navbar-brand
+.navbar-brand {
+  font-size: 24px;
+}
+
+
+/*a.nav-link*/
+
+.navbar-dark .navbar-nav .nav-link{
+  color: rgba(255,255,255,.55);
+  display: block;
+  padding: 10px;
+  text-align: center;
+  float: none;
+}
+
+ 
+/* a.nav-link:hover,
+a.nav-link:current */
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: $primary;
+  background: #555;
+  text-decoration: underline;
+}

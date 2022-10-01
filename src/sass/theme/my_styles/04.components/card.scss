@@ -1,0 +1,83 @@
+/* card */
+
+.card {
+  padding: 4rem 1rem 1.25rem;
+  border-radius: 0;
+}
+
+.card--home-page {
+  @media (min-width: 769px) {
+    min-height: 350px;
+  }
+}
+
+.card-testimonial {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5%;
+  opacity: 0.9;
+  overflow: hidden;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  margin-right: 50px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+}
+.card--color-base {
+  background-color: #93e9be;
+}
+
+.card--color-dark {
+  background-color: #414649;
+  color: #fff;
+}
+
+.card--color-lite {
+  background-color: #fff;
+}
+
+.card--contact {
+  background-color: #414649;
+  color: #fff;
+  height: 298px;
+}
+
+.card__head {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card__head--alt {
+  font-size: 30px;
+  padding: 0 1.75rem;
+  line-height: 1.5em;
+}
+@media (min-width: 769px) {
+  .card__head--alt {
+    text-align: left;
+  }
+}
+
+.card__icon {
+  font-size: 3em;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+  .card__body {
+    padding: 0 1.75rem;
+  }
+}
+
+.card__body--alt {
+  text-align: center;
+}
+
+.card__copy {
+  margin-bottom: 2rem;
+}

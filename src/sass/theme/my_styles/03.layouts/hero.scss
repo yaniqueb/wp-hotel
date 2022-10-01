@@ -1,0 +1,41 @@
+
+/* Hero */ 
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+}
+
+.hero__content * {
+  z-index: 50;
+}
+
+.hero__title {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+.hero__copy {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}

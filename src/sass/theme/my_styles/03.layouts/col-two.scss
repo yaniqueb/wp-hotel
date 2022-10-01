@@ -1,0 +1,20 @@
+
+.two-col {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 769px) {
+      flex-direction: row;
+      .two-col__info {
+        min-height: 100%;
+      }
+    }
+}
+
+
+.two-col__info,
+.two-col__img {
+  width: 100%;
+}
+
+
