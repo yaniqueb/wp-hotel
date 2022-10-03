@@ -1,16 +1,17 @@
 
 
-/* testimonials */
+/* testimonials section */
 .testimonial-section {
-  background: url("../img/tropical.jpg") no-repeat center center/cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 650px;
   padding: 2.5rem 10px 0;
   overflow: hidden;
-}
-@media (min-width: 540px) {
-  .testimonial-section {
+
+  @media (min-width: 540px) { 
     height: fit-content;
-  }
+  } 
 }
 
 .testimonial__title {

@@ -2,6 +2,7 @@
 <?php 
 $profile_pic = get_field('profile_pic');
 $comment = get_field('comment');
+
 ?>
 
 <?php 
