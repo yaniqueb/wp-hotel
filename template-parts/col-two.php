@@ -4,7 +4,7 @@ $title              = $args['title'] ? $args['title'] :'';
 $btn                = $args['btn'] ? $args['btn'] :'';
 $btn_class          = $args['card_btn_class'] ? $args['card_btn_class'] :'';
 $col_img            = $args['img'] ? $args['img'] :'';
-$col_img_class      = $args['img_class'] ? $args['img_class'] : '';
+$col_img_class      = ($args['img_class']) ? $args['img_class'] : ' ';
 $col_section_class  = $args['align'] ? $args['align'] :'';
 $col_section_id     = $args['id'] ? $args['id'] : '';
 $card_class         = $args['card_class'] ? $args['card_class'] : '';
@@ -26,6 +26,7 @@ $card_body_class    = $args['card_body_class'] ? $args['card_body_class'] : '';
                 'card_btn_class'    => $btn_class,
                 'card_title'        => $title,
                 'card_copy'         => $copy,
+                'card_icon_class'   => '',
             ]); ?>
         </div>
     </div>

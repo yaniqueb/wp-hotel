@@ -1,33 +1,24 @@
 
 
 /* multi col section */
-.multi-col {
+.col-multi {
   display: flex;
   flex-direction: column;
   border: none;
-
-}
-@media (min-width: 769px) {
-  .multi-col {
+  @media (min-width: 769px) {
     flex-direction: row;
-    
   }
 }
 
-.multi-col__left,
-.multi-col__mid,
-.multi-col__right {
+
+.col-multi__card {
   width: 100%;
- 
-}
-
-@media (min-width: 769px) {
-  .multi-col__left,
-  .multi-col__mid,
-  .multi-col__right {
+  @media (min-width: 769px) {
     width: 33.4%;
+    min-height: 350px;
   }
 }
+
 
 input [type=text] {
   width: 100%;

@@ -1,8 +1,6 @@
 
 
 
-
-
   <section class="contact-form py-3">
     <h2><span class="text-primary">Contact</span> Us</h2>
     <p> Please fill out the form below to contact us.</p>  

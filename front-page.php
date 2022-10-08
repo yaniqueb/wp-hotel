@@ -4,25 +4,34 @@ get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
 
-// get acf fields 
+// get acf fields for col-two section
 $two_col_copy = get_field('two_col_card_copy');
 $two_col_title = get_field('two_col_card_title');
 $two_col_btn = get_field('two_col_card_btn');
 $two_col_img = get_field('two_col_img');
 $two_col_align = get_field('two_col_align');
 
-$multi_col_copy_1 = get_field('multi_col_text_1');
-$multi_col_copy_2 = get_field('multi_col_text_2');
-$multi_col_copy_3 = get_field('multi_col_text_3');
-$multi_col_copy_4 = get_field('multi_col_text_4');
-$multi_col_icon_1 = get_field('multi_col_icon');
-$multi_col_icon_2 = get_field('multi_col_icon_2');
-$multi_col_icon_3 = get_field('multi_col_icon_3');
-$multi_col_icon_4 = get_field('multi_col_icon_4');
-$multi_col_title_1 = get_field('multi_col_title_1');
-$multi_col_title_2 = get_field('multi_col_title_2');
-$multi_col_title_3 = get_field('multi_col_title_3');
-$multi_col_title_4 = get_field('multi_col_title_4');
+// get acf fields for col-multi section
+$multi_col_copy_1   = get_field('multi_col_text_1');
+$multi_col_copy_2   = get_field('multi_col_text_2');
+$multi_col_copy_3   = get_field('multi_col_text_3');
+$multi_col_copy_4   = get_field('multi_col_text_4');
+$multi_col_icon_1   = get_field('multi_col_icon_1');
+$multi_col_icon_2   = get_field('multi_col_icon_2');
+$multi_col_icon_3   = get_field('multi_col_icon_3');
+$multi_col_icon_4   = get_field('multi_col_icon_4');
+$multi_col_title_1  = get_field('multi_col_title_1');
+$multi_col_title_2  = get_field('multi_col_title_2');
+$multi_col_title_3  = get_field('multi_col_title_3');
+$multi_col_title_4  = get_field('multi_col_title_4');
+
+$multi_col_acf_array = [];
+// looping to add col-multi acf values into an array 
+for ($x = 1; $x < 5; $x++) {
+  $multi_col_acf_array[$x]['icon'] =  ${multi_col_icon_ . $x};
+  $multi_col_acf_array[$x]['title'] =  ${multi_col_title_ . $x};
+  $multi_col_acf_array[$x]['copy']  =  ${multi_col_copy_ . $x};  
+}
 ?>
 
 <?php if ( is_front_page() ) : ?>
@@ -43,6 +52,7 @@ $multi_col_title_4 = get_field('multi_col_title_4');
         'copy'              => $two_col_copy,
         'btn'               => $two_col_btn,
         'img'               => $two_col_img,
+        'img_class'         => '',
         'align'             => $two_col_align,
         'id'                => 'home-info',
         'card_class'        => 'card--color-dark card--no-icon', 
@@ -54,47 +64,20 @@ $multi_col_title_4 = get_field('multi_col_title_4');
 <!-- multi col section-->	
 
 
-<section class="multi-col" id="features">
-    <div class="multi-col__left">
-      <?php get_template_part('template-parts/card', '', [
-        'card_class'        => 'card--color-lite card--icon card--home-page',
-        'card_icon_class'   => $multi_col_icon_1, 
-        'card_body_class'   => 'card__body--alt',
-        'card_title'        => $multi_col_title_1,
-        'card_copy'         => $multi_col_copy_1,
-      ]); ?> 
-    </div>
+<?php 
+        // calls in col-multi template part 
+        get_template_part('template-parts/col', 'multi', [
+          'multi_col_array'   => $multi_col_acf_array, 
+          'card_class'        => [
+            'card--color-lite',
+            'card--color-base',
+            'card--color-lite',
+            'card--color-base',  
+          ]
+        ]);
+      
+      ?>	
 
-    <div class="multi-col__mid">
-    <?php get_template_part('template-parts/card', '', [
-        'card_class'        => 'card--color-base card--icon card--home-page',
-        'card_icon_class'   => $multi_col_icon_2, 
-        'card_body_class'   => 'card__body--alt',
-        'card_title'        => $multi_col_title_2,
-        'card_copy'         => $multi_col_copy_2,  
-      ]); ?>  
-    </div>
-
-    <div class="multi-col__right">
-    <?php get_template_part('template-parts/card', '', [
-        'card_class'        => 'card--color-lite card--icon card--home-page',
-        'card_icon_class'   => $multi_col_icon_3, 
-        'card_body_class'   => 'card__body--alt',
-        'card_title'        => $multi_col_title_3,
-        'card_copy'         => $multi_col_copy_3,  
-      ]); ?>
-		</div>	
-
-		<div class="multi-col__mid">
-    <?php get_template_part('template-parts/card', '', [
-        'card_class'        => 'card--color-base card--icon card--home-page',
-        'card_icon_class'   => $multi_col_icon_4, 
-        'card_body_class'   => 'card__body--alt',
-        'card_title'        => $multi_col_title_4,
-        'card_copy'         => $multi_col_copy_4,
-      ]); ?>  
-    </div>
-</section>
 
 <!-- end of multi col section -->
 
