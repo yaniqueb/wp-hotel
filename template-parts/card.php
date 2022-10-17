@@ -1,12 +1,11 @@
 <?php 
-$card_class = ($args['card_class']) ? $args['card_class'] : '';
-$card_body_class = ($args['card_body_class']) ? $args['card_body_class'] : '';
-$card_btn_class = ($args['card_btn_class']) ? $args['card_btn_class'] : '';
-$card_icon_class = ($args['card_icon_class']) ? $args['card_icon_class'] : '';
-$card_title = ($args['card_title']) ? $args['card_title'] : '';
-$card_copy = ($args['card_copy']) ? $args['card_copy'] : '';
-$card_btn = ($args['card_btn']) ? $args['card_btn'] : '';
-
+$card_class       = ($args['card_class']) ? $args['card_class'] : '';
+$card_body_class  = ($args['card_body_class']) ? $args['card_body_class'] : '';
+$card_btn_class   = ($args['card_btn_class']) ? $args['card_btn_class'] : '';
+$card_icon_class  = ($args['card_icon_class']) ? $args['card_icon_class'] : '';
+$card_title       = ($args['card_title']) ? $args['card_title'] : '';
+$card_copy        = ($args['card_copy']) ? $args['card_copy'] : '';
+$card_btn         = ($args['card_btn']) ? $args['card_btn'] : '';
 ?>
 
 <div class="card h-100 <?php echo esc_attr( $card_class ); ?>">

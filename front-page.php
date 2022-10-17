@@ -5,11 +5,11 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 
 // get acf fields for col-two section
-$two_col_copy = get_field('two_col_card_copy');
-$two_col_title = get_field('two_col_card_title');
-$two_col_btn = get_field('two_col_card_btn');
-$two_col_img = get_field('two_col_img');
-$two_col_align = get_field('two_col_align');
+$two_col_copy   = get_field('two_col_card_copy');
+$two_col_title  = get_field('two_col_card_title');
+$two_col_btn    = get_field('two_col_card_btn');
+$two_col_img    = get_field('two_col_img');
+$two_col_align  = get_field('two_col_align');
 
 // get acf fields for col-multi section
 $multi_col_copy_1   = get_field('multi_col_text_1');
@@ -46,8 +46,10 @@ for ($x = 1; $x < 5; $x++) {
 
 			<main class="site-main" id="main">
 
-        <?php get_template_part('template-parts/col', 'two', 
-      [
+      <!-- begin col-two section-->	
+      <?php 
+      // calls in col-two template part
+      get_template_part('template-parts/col', 'two', [
         'title'             => $two_col_title,
         'copy'              => $two_col_copy,
         'btn'               => $two_col_btn,
@@ -60,25 +62,20 @@ for ($x = 1; $x < 5; $x++) {
         'card_btn_class'    => 'btn--lite',
 
       ]); ?>
+      <!-- end of col-two section -->
 
-<!-- multi col section-->	
-
-
-<?php 
+      <!-- begin multi col section-->	
+      <?php 
         // calls in col-multi template part 
         get_template_part('template-parts/col', 'multi', [
-          'multi_col_array'   => $multi_col_acf_array, 
-          'card_class'        => [
+            'multi_col_array'   => $multi_col_acf_array, 
+            'card_class'        => [
             'card--color-lite',
             'card--color-base',
             'card--color-lite',
             'card--color-base',  
           ]
-        ]);
-      
-      ?>	
-
-
+        ]); ?>	
 <!-- end of multi col section -->
 
   

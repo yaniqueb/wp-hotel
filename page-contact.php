@@ -6,28 +6,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 // get acf fields for col-multi section
 
-$multi_col_icon_1 = get_field('multi_col_icon_1');
-$multi_col_icon_2 = get_field('multi_col_icon_2');
-$multi_col_icon_3 = get_field('multi_col_icon_3');
-$multi_col_icon_4 = get_field('multi_col_icon_4');
-$multi_col_title_1 = get_field('multi_col_title_1');
-$multi_col_title_2 = get_field('multi_col_title_2');
-$multi_col_title_3 = get_field('multi_col_title_3');
-$multi_col_title_4 = get_field('multi_col_title_4');
-$multi_col_copy_1 = get_field('multi_col_text_1');
-$multi_col_copy_2 = get_field('multi_col_text_2');
-$multi_col_copy_3 = get_field('multi_col_text_3');
-$multi_col_copy_4 = get_field('multi_col_text_4');
+$multi_col_icon_1   = get_field('multi_col_icon_1');
+$multi_col_icon_2   = get_field('multi_col_icon_2');
+$multi_col_icon_3   = get_field('multi_col_icon_3');
+$multi_col_icon_4   = get_field('multi_col_icon_4');
+$multi_col_title_1  = get_field('multi_col_title_1');
+$multi_col_title_2  = get_field('multi_col_title_2');
+$multi_col_title_3  = get_field('multi_col_title_3');
+$multi_col_title_4  = get_field('multi_col_title_4');
+$multi_col_copy_1   = get_field('multi_col_text_1');
+$multi_col_copy_2   = get_field('multi_col_text_2');
+$multi_col_copy_3   = get_field('multi_col_text_3');
+$multi_col_copy_4   = get_field('multi_col_text_4');
 
 
 $multi_col_acf_array = [];
 // looping to add col-multi acf values into an array 
 for ($x = 1; $x < 5; $x++) {
-  
-  $multi_col_acf_array[$x]['icon'] =  ${multi_col_icon_ . $x};
+  $multi_col_acf_array[$x]['icon']  =  ${multi_col_icon_ . $x};
   $multi_col_acf_array[$x]['title'] =  ${multi_col_title_ . $x};
   $multi_col_acf_array[$x]['copy']  =  ${multi_col_copy_ . $x};
-  
 }
 
 ?>

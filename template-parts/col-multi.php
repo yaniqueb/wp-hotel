@@ -3,9 +3,6 @@ $multi_col_array  = $args['multi_col_array'] ? $args['multi_col_array'] : '';
 $card_class       = ($args['card_class']) ? $args['card_class'] : '';
 ?>
 
-
-
-
 <section class="col-multi" id="features">
   
     <?php 
