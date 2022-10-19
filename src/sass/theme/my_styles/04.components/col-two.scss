@@ -1,18 +1,12 @@
-
 .two-col {
-
   @media (min-width: 769px) {
-    
-      .two-col__info {
-        min-height: 100%;
-      }
+    .two-col__info {
+      min-height: 100%;
     }
+  }
 }
-
 
 .two-col__info,
 .two-col__img {
   width: 100%;
 }
-
-

@@ -36,3 +36,4 @@ $card_btn         = ($args['card_btn']) ? $args['card_btn'] : '';
     <?php endif; ?>
   </div>  
 </div>
+<?php

@@ -36,3 +36,4 @@ if( 'top' == $copy_position) {
     </div> <!-- end row -->
     </div> <!-- end container-fluid -->
   </div> <!-- end hero  -->
+  <?php

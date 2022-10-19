@@ -1,6 +1,6 @@
 <?php 
-$multi_col_array  = $args['multi_col_array'] ? $args['multi_col_array'] : '';
-$card_class       = ($args['card_class']) ? $args['card_class'] : '';
+$multi_col_array  = $args['multi_col_array'];
+$card_class       = $args['card_class'];
 ?>
 
 <section class="col-multi" id="features">
@@ -32,3 +32,4 @@ $card_class       = ($args['card_class']) ? $args['card_class'] : '';
 <?php endforeach; ?>
 <?php endif; ?>
 </section>
+<?php

@@ -5,10 +5,6 @@ $comment = get_field('comment');
 
 ?>
 
-<?php 
-  while(have_posts()) {
-    the_post(); ?>
-
     <div class="slides">
       <div class="card-testimonial card--color-base slider">
         <?php echo wp_get_attachment_image($profile_pic, "full", false, ["class" => "test-img"]); ?>
@@ -17,9 +13,3 @@ $comment = get_field('comment');
     </div>
 
 <?php 
-  } ?>
-    
-   
-
-  
-    

@@ -34,6 +34,8 @@ $testamonials_bg_img = get_field('bg_img');
 							'id'                => 'about-info',
 							'card_class'        => 'card--color-lite card--no-icon', 
 							'card_body_class'   => 'card__body--alt',
+							'btn'								=> '',
+							'card_btn_class'		=> '',
 						]); 
 				?>
 				<section class="testimonials">

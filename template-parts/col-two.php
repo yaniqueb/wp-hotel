@@ -1,17 +1,16 @@
 <?php
 // create place for acf fields for card template
-$card_class         = $args['card_class'] ? $args['card_class'] : ''; 
-$card_body_class    = $args['card_body_class'] ? $args['card_body_class'] : '';
-$copy               = $args['copy'] ? $args['copy'] :'' ;
-$title              = $args['title'] ? $args['title'] :'';
-$btn                = $args['btn'] ? $args['btn'] :'';
-$btn_class          = $args['card_btn_class'] ? $args['card_btn_class'] :'';
+$card_class         = $args['card_class']; 
+$card_body_class    = $args['card_body_class'];
+$copy               = $args['copy'];
+$title              = $args['title'];
+$btn                = $args['btn'];
+$btn_class          = $args['card_btn_class'];
 // create place for fields for col-two section
-$col_img            = $args['img'] ? $args['img'] :'';
-$col_img_class      = ($args['img_class']) ? $args['img_class'] : ' ';
-$col_section_class  = $args['align'] ? $args['align'] :'';
-$col_section_id     = $args['id'] ? $args['id'] : '';
-
+$col_img            = $args['img'];
+$col_img_class      = $args['img_class'];
+$col_section_class  = $args['align'];
+$col_section_id     = $args['id'];
 ?>
 
 
@@ -32,4 +31,5 @@ $col_section_id     = $args['id'] ? $args['id'] : '';
             ]); ?>
         </div>
     </div>
-  </section>
+</section>
+<?php
