@@ -8,7 +8,7 @@ $copy_position = get_field('copy_position');
 $copy_position_style = ''; 
 
 if( 'top' == $copy_position) {
-  $copy_position_style = '1.5rem';
+  $copy_position_style = '3.5rem';
 } else if( 'mid' == $copy_position) {
   $copy_position_style = '10rem';
 } else if('bottom' == $copy_position) {
