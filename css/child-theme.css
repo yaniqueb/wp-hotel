@@ -15727,43 +15727,6 @@ a.nav-link:current */
   line-height: 1.7em;
 }
 
-@media (min-width: 769px) {
-  .two-col .two-col__info {
-    min-height: 100%;
-  }
-}
-
-.two-col__info,
-.two-col__img {
-  width: 100%;
-}
-
-/* multi col section */
-.col-multi {
-  display: flex;
-  flex-direction: column;
-  border: none;
-}
-@media (min-width: 769px) {
-  .col-multi {
-    flex-direction: row;
-  }
-}
-
-.col-multi__card {
-  width: 100%;
-}
-@media (min-width: 769px) {
-  .col-multi__card {
-    width: 33.4%;
-    min-height: 350px;
-  }
-}
-
-input [type=text] {
-  width: 100%;
-}
-
 /* testimonials section */
 .testimonial-section {
   background-position: center;
@@ -15839,7 +15802,6 @@ input [type=text] {
 .card-testimonial {
   padding: 20px;
   margin: 20px 0;
-  border-radius: 5%;
   opacity: 0.9;
   overflow: hidden;
   scroll-snap-align: start;
@@ -15934,40 +15896,6 @@ input [type=text] {
   border-color: #93e9be;
 }
 
-/* slides */
-.slides {
-  display: flex;
-  overflow-x: auto;
-  -ms-scroll-snap-type: x mandatory;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-@media (min-width: 540px) {
-  .slides {
-    display: unset;
-    overflow-x: unset;
-    -ms-scroll-snap-type: unset;
-    scroll-snap-type: unset;
-    scroll-behavior: unset;
-    -webkit-overflow-scrolling: unset;
-  }
-}
-
-.slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-.slides::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
-
-.slides::-webkit-scrollbar-track {
-  background: transparent;
-}
-
 /* Image */
 .bg-img {
   background-size: cover;
@@ -15980,6 +15908,43 @@ input [type=text] {
   border-radius: 50%;
   float: left;
   margin-right: 20px;
+}
+
+@media (min-width: 769px) {
+  .two-col .two-col__info {
+    min-height: 100%;
+  }
+}
+
+.two-col__info,
+.two-col__img {
+  width: 100%;
+}
+
+/* multi col section */
+.col-multi {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+@media (min-width: 769px) {
+  .col-multi {
+    flex-direction: row;
+  }
+}
+
+.col-multi__card {
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .col-multi__card {
+    width: 33.4%;
+    min-height: 350px;
+  }
+}
+
+input [type=text] {
+  width: 100%;
 }
 
 .has-blue-color,
