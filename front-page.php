@@ -28,9 +28,9 @@ $multi_col_title_4  = get_field('multi_col_title_4');
 $multi_col_acf_array = [];
 // looping to add col-multi acf values into an array 
 for ($x = 1; $x < 5; $x++) {
-  $multi_col_acf_array[$x]['icon']  =  ${multi_col_icon_ . $x};
-  $multi_col_acf_array[$x]['title'] =  ${multi_col_title_ . $x};
-  $multi_col_acf_array[$x]['copy']  =  ${multi_col_copy_ . $x};  
+  $multi_col_acf_array[$x]['icon']  =  ${"multi_col_icon_" . $x};
+  $multi_col_acf_array[$x]['title'] =  ${"multi_col_title_" . $x};
+  $multi_col_acf_array[$x]['copy']  =  ${"multi_col_copy_" . $x};  
 }
 ?>
 
